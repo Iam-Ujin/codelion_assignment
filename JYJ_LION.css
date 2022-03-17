@@ -12,7 +12,7 @@ body {
 
 .container {
   margin: auto;
-  background-color: #eee;
+  background-color: #fff;
   width: 500px;
   border-radius: 5px;
   /* display: none; */
@@ -72,7 +72,9 @@ a.btn {
   margin: 0 5px;
 }
 
-a.btn1 {
+a.btn1,
+a.joinBtn,
+a.findBtn {
   color: #eee;
   font-weight: bold;
   font-size: 18px;
@@ -80,7 +82,10 @@ a.btn1 {
   background-color: rgb(51, 129, 218);
 }
 
-a.btn1:hover {
+a.btn1:hover,
+a.joinBtn:hover,
+.userInfo button:hover,
+a.findBtn:hover {
   color: rgb(51, 129, 218);
   background: lightgray;
 }
@@ -139,4 +144,42 @@ a.btn5 {
 
 a.btn5:hover {
   box-shadow: 0px 0px 2px 1px rgb(221, 199, 0);
+}
+
+/* 회원가입 페이지 */
+.joinBox {
+  display: none;
+}
+
+.userInfo {
+  list-style-type: none;
+  padding: 40px 0;
+}
+
+.userInfo li {
+  margin-bottom: 20px;
+}
+
+.userInfo li span {
+  display: block;
+}
+
+.userInfo li input {
+  width: 300px;
+}
+
+.userInfo button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 15px;
+  color: #eee;
+  background-color: rgb(51, 129, 218);
+}
+
+.findIdBox {
+  display: none;
+}
+
+.findIdBox div.main a {
+  margin: 20px 0;
 }
